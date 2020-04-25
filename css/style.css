@@ -217,3 +217,10 @@
     height: 100%;
     border: 0;
 }
+
+/* Processo Seletivo */
+.pet-icone-seletivo{
+	font-size: 100px;
+	color: #0D47A1;
+	padding: 50px;
+}
