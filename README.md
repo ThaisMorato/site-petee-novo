@@ -33,16 +33,25 @@ $ git commit -m "msg"
 ```
 $ git push origin branch
 ```
+
 **b)** Coloborador 1:
 ---------------------
+
 **1)** Entrar no GitHub e clicar em "Compare & Pull Request"
+
 **2)** Descrever as modificações
+
 **3)** Clicar em "Create Pull Request"
+
 **c)** Coloborador 2:
 ---------------------
+
 **1)** Abrir a Pull Reqquest e conferir as modificações
+
 **2)** Clicar em "Merge Pull Request"
+
 **3)** Clicar em "Delete Branch"
+
 
 ## Site do font-awesome ##
 https://fontawesome.com/icons?d=gallery&s=solid&m=free
