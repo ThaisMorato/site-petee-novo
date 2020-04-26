@@ -4,6 +4,11 @@ Site do PETEE refeito em 2020
 ## Instruções GIT ##
 **a)** Coloborador 1:
 ---------------------
+**0)** Trocar para o master caso nao esteja (opcional eu acho)
+```
+$ git checkout master
+```
+
 **1)** Carregar no seu repositório local a mais nova versão
 ```
 $ git pull origin master
@@ -13,6 +18,7 @@ $ git pull origin master
 $ git checkout -b "branch"
 ```
 **3)** Modificar o site
+
 **4)** Ver as alterações feitas (opcional)
 ```
 $ git status
