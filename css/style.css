@@ -3,6 +3,7 @@
 		scroll-behavior: smooth;
 		margin-left: 7%;
 		margin-right: 7%;
+		margin-bottom: 20px;
 	}
 
 	body{
@@ -148,7 +149,7 @@
 		transform: scale(1.03);
 	}
 	
-	.atividade .btn{
+	.btn{
 		background-color: #0D47A1;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 500;
@@ -157,8 +158,9 @@
 		transition: background-color 0.2s;
 	}
 	
-	.atividade .btn:hover{
+	.btn:hover{
 		background-color: #0C2C84;
+		color: white;
 	}
 	
 	.atividade img{
@@ -172,7 +174,7 @@
 		padding-bottom: 3px;
 		padding-left: 5px;
 		padding-right: 5px;
-		background-color: white;
+		background-color: #F8F8F8;
 		margin: 10px;
 		font-size: 26px;
 		color: #0C2C84;
