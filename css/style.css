@@ -24,7 +24,7 @@
 	font-size: 15px;
 	}
 
-	.h4{
+	h4{
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
 		color: #6C757D;
@@ -125,7 +125,7 @@
 		color: white;
 	}
 
-/*sessao atividades*/
+/*sessao minicursos e oficinas*/
 	.atividade .card-text{
 		text-align: justify;
 	}
@@ -180,94 +180,118 @@
 		border-radius: 10px;
 	}
 
+/*sessao cora*/
+	.img-cora{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.img-cora > img{
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+	
+	.text-cora{
+		min-height: 145px;
+		display: table;
+	}
+	
+	.text-cora-center{
+		padding-left: 16px;
+		padding-right: 16px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: justify;
+	}
 
 /* Paginas atividades */
+	.checkbox-icon{
+		color: #0D47A1;
+		background-color: #F8F8F8;
+		padding: 5px;
+	}
 
-.checkbox-icon{
-	color: #0D47A1;
-	background-color: #F8F8F8;
-	padding: 5px;
-}
+	.btn-myblue{
+		background-color: #0D47A1;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		color: white;
+		font-size: 16px;
+	}
 
-.btn-myblue{
-	background-color: #0D47A1;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	color: white;
-	font-size: 16px;
-}
+	.btn-myblue:hover{
+		color: white;
+		background-color: #0C2C84;
+		transition: background-color 0.2s;
+	}
 
-.btn-myblue:hover{
-	color: white;
-	background-color: #0C2C84;
-	transition: background-color 0.2s;
-}
+	.iframe-container {
+		position: relative;
+		overflow: hidden;
+		padding-top: 56.25%;
+	}
 
-.iframe-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-
-.iframe-fluid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
+	.iframe-fluid {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
 
 /* Processo Seletivo */
-.pet-icone-seletivo{
-	font-size: 100px;
-	color: #0D47A1;
-	padding: 50px;
-}
+	.pet-icone-seletivo{
+		font-size: 100px;
+		color: #0D47A1;
+		padding: 50px;
+	}
 
 /* Banner Carrossel */
-.carousel-control-prev-myblue,
-.carousel-control-next-myblue {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-image: none;
-}
+	.carousel-control-prev-myblue,
+	.carousel-control-next-myblue {
+	  height: 100px;
+	  width: 100px;
+	  background-size: 100%, 100%;
+	  border-radius: 50%;
+	  background-image: none;
+	}
 
-.carousel-control-next-myblue:after
-{
-  content: '>';
-  font-size: 55px;
-  color: #0D47A1;
-}
+	.carousel-control-next-myblue:after
+	{
+	  content: '>';
+	  font-size: 55px;
+	  color: #0D47A1;
+	}
 
-.carousel-control-prev-myblue:after {
-  content: '<';
-  font-size: 55px;
-  color: #0D47A1;
-}
+	.carousel-control-prev-myblue:after {
+	  content: '<';
+	  font-size: 55px;
+	  color: #0D47A1;
+	}
 
-.carousel-indicators-myblue li {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color:  #0D47A1;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
-}
-.carousel-indicators-myblue .active {
-    width: 20px;
-    height: 20px;
-    margin: 4px;
-    background-color: #0C2C84;
-}
+	.carousel-indicators-myblue li {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 5px;
+		text-indent: 0;
+		cursor: pointer;
+		border: none;
+		border-radius: 50%;
+		background-color:  #0D47A1;
+		box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+	}
+	.carousel-indicators-myblue .active {
+		width: 20px;
+		height: 20px;
+		margin: 4px;
+		background-color: #0C2C84;
+	}
 
-.carousel-banner{
-	min-height: 650px; 
-	margin: 0px 120px 100px 120px;
-}
+	.carousel-banner{
+		min-height: 650px; 
+		margin: 0px 120px 100px 120px;
+	}
