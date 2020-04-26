@@ -55,13 +55,104 @@
 			  </div>
 			</nav>
 		</header>
-		<!-- simbolo petee -->
-		<div class="container-fluid text-center" style="padding-top: 96px">
-			<div class="row justify-content-center">
-				<div class="col-5">
-					<img class="img-fluid" src="img/simbolo_petee.png">
-				</div>				
-			</div>
+		<!-- banner -->
+		<div id="banner" class="container-fluid text-center" style="padding-top: 96px">
+			<!-- Carrossel do banner -->
+			<div id="carouselBanner" class="carousel slide" data-ride="carousel" data-interval="10000">
+				<ol class="carousel-indicators carousel-indicators-myblue">
+				    <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselBanner" data-slide-to="1"></li>
+					<li data-target="#carouselBanner" data-slide-to="2"></li>
+					<li data-target="#carouselBanner" data-slide-to="3"></li>
+					<li data-target="#carouselBanner" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<!-- Logo PETEE -->
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5">
+								<img class="d-block w-100 img-fluid" src="img/simbolo_petee_600x600.png">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-1">PETEE UFMG</h1>
+								<p>Programa de Educação Tutorial da Engenharia Elétrica</p>
+								<p>Universidade Federal de Minas Gerais</p>
+								<h5><i class="fas fa-chalkboard-teacher pet-icone"></i> Ensino <i class="fas fa-search pet-icone"></i> Pesquisa <i class="fas fa-users pet-icone"></i> Extensão</h5>
+							</div>				
+						</div>
+					</div>
+					<!-- CoRA -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="img/atividades/cora.JPG">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<a href="http://cora.cpdee.ufmg.br/" target="_blank"><img class="img-fluid" src="img/logo_cora_400x125.png"></a></a>
+								<br>
+								<i class="fas fa-robot pet-icone"></i>
+								<p>Competição de Robôs Autônomos</p>
+								<p>Universidade Federal de Minas Gerais</p>
+								<h5>Monte sua equipe, construa seu robô e enfrente os desafios da <a href="http://cora.cpdee.ufmg.br/" target="_blank">CoRA</a>.</h5> 
+							</div>
+						</div>
+					</div>
+					<!-- Seguidores de Linha -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="com-md-12 col-lg-5"  style="padding: 10px;">
+								<div class="iframe-container">
+									<iframe class="iframe-fluid" src="https://www.youtube.com/embed/e21hZgaQIg0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<br>
+								<a class="btn btn-myblue" href="https://youtu.be/e21hZgaQIg0" target="_blank">Veja no YouTube</a>
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Robôs Seguidores de Linha</h1>
+								<i class="fas fa-robot pet-icone"></i>
+								<h5>São robôs autônomos com diversas aplicações industriais, hospitalares, educacionais e no cotidiano</h5> 
+								<h5>Eles são temas de várias atividades do PETEE, como a <a href="http://cora.cpdee.ufmg.br/" target="_blank">CoRA</a> e as <a href="atividades/seguidor.html">Oficinas de Seguidor</a></h5>
+							</div>
+						</div>
+					</div>
+					<!-- Minicursos e Oficinas -->
+				    <div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="img/minicursos_oficinas/seguidor/seguidor_promo.JPG">
+								<!-- <img class="img-fluid img-thumbnail" src="img/minicursos_oficinas/seguidor/seguidor_promo2.jpeg"> -->
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Minicursos e Oficinas</h1>
+								<i class="fas fa-chart-line pet-icone"></i>
+								<h5>Aprimore seus conhecimentos e enriqueça seu currículo participando dos minicursos e das oficinas</h5> 
+								<h5>Também disponibilizamos materiais gratuitos e cursos online, <a href="#minicursos-oficinas">disponíveis abaixo</a>.
+							</div>
+						</div>
+					</div>
+					<!-- Processo Seletivo -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="img/festival_matematica_promo.jpeg">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Torne-se um petiano</h1>
+								<i class="fas fa-bolt pet-icone"></i>
+								<h5>Fique por dentro das nossas redes sociais para a abertura do <a href="processo_seletivo/processoseletivo.html">processo seletivo</a>.</h5> 
+							</div>
+						</div>
+				    </div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon carousel-control-prev-myblue" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon carousel-control-next-myblue" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				</a>
+			</div>	
 		</div>
 		<!-- o que e pet -->
 		<div id="pet" class="container-fluid" style="padding-top: 96px">
