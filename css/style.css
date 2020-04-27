@@ -188,7 +188,7 @@
 		margin-bottom: 10px;
 	}
 	
-	.img-cora > img{
+	.img-cora img{
 		width: 100%;
 		height: 350px;
 		object-fit: cover;
@@ -208,6 +208,68 @@
 		text-align: justify;
 	}
 
+/* sessao o grupo */	
+	.grupo-carousel img{
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+	}
+	
+	.grupo-carousel .carousel-item p{
+		color: white;
+		padding: 0px;
+		margin: 0px;
+		font-size: 13px;
+	}
+	
+	.grupo-carousel .carousel-item h5{
+		color: white;
+		padding-top: 0px;
+		padding-bottom: 2px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin: 0px;
+		font-size: 16px;
+	}
+	
+	.grupo-carousel .carousel-caption{
+		background-color: rgba(0, 0, 0, 0.7); /*#0C2C8480*/
+		padding: 8px;
+		margin: 0px;
+	}
+	
+	#grupo .titulo{
+		display: table;
+		width: 100%;
+	}
+	
+	#grupo .titulo h5{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	#grupo .linha-subtitulo{
+		padding-bottom: 10px;
+		width: 90px;
+	}
+	
+	#grupo .grupo-carousel{
+		max-width: 250px;
+		margin: auto;
+	}
+	
+	#grupo .fazer-parte .card{
+		min-height: 350px;
+		margin: auto;
+		background-color: #F8F8F8;
+	}
+	
+	#grupo .fazer-parte p{
+		margin: 0px;
+		text-align: justify;
+	}
+	
 /* Paginas atividades */
 	.checkbox-icon{
 		color: #0D47A1;
