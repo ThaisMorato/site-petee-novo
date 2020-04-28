@@ -58,24 +58,66 @@
 			  </div>
 			</nav>
 		</header>
+		<!-- Nav lateral -->
+		<div id="mySidenav" class="sidenav bg-dark navbar-dark" style="width: 0px;">
+			<div class="row align-items-center justify-content-center" style="height: 40px;">
+				<i class="fas fa-download text-light" style="font-size: 40px;"></i>
+			</div>
+			<br><br>
+			<ul class="navbar-nav text-right" style="padding-right: 7%;">
+				<li class="nav-item">
+					<a href="#minicursos-oficinas" class="nav-link">Minicursos e Oficinas</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#escolab" class="nav-link">EsColab</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#manual-ee" class="nav-link">Manual da EE</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#processo-seletivo" class="nav-link">Processo Seletivo</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#prototipos" class="nav-link">Protótipos</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#outros-relatorios" class="nav-link">Outros Relatórios</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#templates" class="nav-link">Templates</a>
+				</li>
+				<br>
+				<li class="nav-item">
+					<a href="#chronos" class="nav-link">Chronos</a>
+				</li>
+			</ul>						
+		</div>
+		<!-- Toggler da Nav lateral -->
+		<div id="sidenavToggler" onclick="toggleNav()" class="bg-dark" style="padding: 0.5%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-right text-light" style="font-size: 30px;"></i></div>
 		<!-- Titulo -->
 		<div id="titulo" class="container-fluid" style="padding-top: 96px;">
 			<!-- titulo sessao -->
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h1 class="display-3">DOWNLOADS</h1>
+					<h1>DOWNLOADS</h1>
 				</div>
 			</div>
 			<!-- linha abaixo do titulo -->
-			<div class="row text-center justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center">
 				<hr class="linha">
-				<i class="fas fa-download h1" style="color: #0D47A1; position: absolute;"></i>
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
 			</div>
-			<br>
 			<!-- descricao sessao -->
 			<div class="row justify-content-center descricao">
 				<div class="col-9">
-					<p>Nesta página você encontra um acervo com todos os downloads disponíveis em nosso site. Use o menu abaixo para se direcionar a seção desejada.</p>
+					<p>Nesta página você encontra um acervo com todos os downloads disponíveis em nosso site.</p>
 				</div>
 			</div>
 		</div>
@@ -98,43 +140,43 @@
 				<div class="card atividade text-center"  style="padding:10px;">
 					<h5 class="card-title text-center">Oficina de Robô Seguidor de Linha</h5>
 					<i class="fas fa-book pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Apostila 1.0</a>
+					<a href="../doc/minicursos_oficinas/seguidor/Apostila_Seguidor_1.0.pdf" target="_blank" class="btn btn-myblue">Apostila 1.0</a>
 					<br>
 					<i class="fas fa-book pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Apostila 2.0</a>
+					<a href="../doc/minicursos_oficinas/seguidor/Apostila_Seguidor_2.0.pdf" target="_blank" class="btn btn-myblue">Apostila 2.0</a>
 					<br>
 					<i class="fas fa-file pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Esquemático Placa de Sensores</a>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Esquemático Placa de Sensores</a>
 					<br>
 					<i class="fas fa-file pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Código Teste Placa de Sensores</a>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Código Teste Placa de Sensores</a>
 				</div>	
 				<!-- matlab -->
 				<div class="card atividade text-center"  style="padding:10px;">
 					<h5 class="card-title text-center">Minicurso de Matlab</h5>
 					<i class="fas fa-book pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Apostila</a>
+					<a href="../doc/minicursos_oficinas/matlab/Apostila_MATLAB.pdf" target="_blank" class="btn btn-myblue">Apostila</a>
 					<br>
 					<i class="fas fa-chalkboard-teacher pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Slide</a>
+					<a href="../doc/minicursos_oficinas/matlab/Slide_MATLAB.pdf" target="_blank" class="btn btn-myblue">Slide</a>
 				</div>
 				<!-- web -->
 				<div class="card atividade text-center"  style="padding:10px;">
 					<h5 class="card-title text-center">Minicurso de Web Design</h5>
 					<i class="fas fa-folder-open pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Pasta</a>
+					<a href="../doc/minicursos_oficinas/web/Pasta_Web.zip" target="_blank" class="btn btn-myblue">Pasta</a>
 					<br>
 					<i class="fas fa-chalkboard-teacher pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Slide</a>
+					<a href="../doc/minicursos_oficinas/web/Slide_Web.pdf" target="_blank" class="btn btn-myblue">Slide</a>
 				</div>
 				<!-- python -->
 				<div class="card atividade text-center"  style="padding:10px;">
 					<h5 class="card-title text-center">Minicurso de Python</h5>
 					<i class="fas fa-book pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Apostila</a>
+					<a href="../doc/minicursos_oficinas/python/Apostila_Python.pdf" target="_blank" class="btn btn-myblue">Apostila</a>
 					<br>
 					<i class="fas fa-chalkboard-teacher pet-icone text-center"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Slide</a>
+					<a href="../doc/minicursos_oficinas/python/Slide_Python.pdf" target="_blank" class="btn btn-myblue">Slide</a>
 				</div>
 				<!-- latex -->
 				<div class="card atividade text-center"  style="padding:10px;">
@@ -145,12 +187,12 @@
 			</div>
 			
 		</div>
-		<!-- prototipos -->
-		<div id="processo-seletivo" class="container-fluid" style="padding-top: 96px">
+		<!-- escolab -->
+		<div id="escolab" class="container-fluid" style="padding-top: 96px">
 			<!-- titulo sessao -->
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h1>PROTÓTIPOS</h1>
+					<h1>ESCOLAB</h1>
 				</div>
 			</div>
 			<!-- linha abaixo do titulo -->
@@ -160,35 +202,124 @@
 				<i class="fas fa-chevron-circle-down linha-icone"></i>
 			</div>
 			<div class="card-deck">
-				<!-- drawdio -->
+				<!-- oficina 1 -->
 				<div class="card atividade text-center"  style="padding:10px;">
-					<h5 class="card-title text-center">Drawdio</h5>
+					<h5 class="card-title text-center">Oficina 1</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Relatório</a>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
 				</div>
-				<!-- controle remoto -->
+				<!-- oficina 2 -->
 				<div class="card atividade text-center"  style="padding:10px;">
-					<h5 class="card-title text-center">Carrinho de Controle Remoto</h5>
+					<h5 class="card-title text-center">Oficina 2</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Relatório</a>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
+					<br>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Aluno</a>
 				</div>
-				<!-- braço robotico -->
+				<!-- oficina 3 -->
 				<div class="card atividade text-center"  style="padding:10px;">
-					<h5 class="card-title text-center">Braço Robótico</h5>
+					<h5 class="card-title text-center">Oficina 3</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Relatório</a>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
 				</div>
-				<!-- desviador -->
+				<!-- oficina 4 -->
 				<div class="card atividade text-center"  style="padding:10px;">
-					<h5 class="card-title text-center">Carrinho Desviador</h5>
+					<h5 class="card-title text-center">Oficina 4</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Relatório</a>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
 				</div>
-				<!-- Seguidor de luz -->
+				<!-- oficina 5 -->
 				<div class="card atividade text-center"  style="padding:10px;">
-					<h5 class="card-title text-center">Robô Seguidor de Luz</h5>
+					<h5 class="card-title text-center">Oficina 5</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Relatório</a>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
+				</div>
+				<!-- oficina 6 -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Oficina 6</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Guia do Monitor</a>
+				</div>
+			</div>
+		</div>
+		<!-- manual ee -->
+		<div id="manual-ee" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>Manual da EE - Percursos Interativos</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<div class="card-deck">
+				<!-- como usar -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Como Usar</h5>
+					<i class="fab fa-youtube pet-icone"></i>
+					<a href="https://youtu.be/pSPSm4FcMrA" target="_blank" class="btn btn-myblue">Abrir no YouTube</a>
+				</div>
+				<!-- fontes -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Fontes Alternativas de Energia</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- micro -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Microeletrônica</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- robotica -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Robótica</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- energia -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Sistemas de Energia</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+			</div>
+			<br>
+			<div class="card-deck">
+				<!-- controle -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Controle de Processos</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- potencia -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Eletrônica de Potência</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- audio -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Engenharia de Áudio</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- computacao -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Engenharia de Computação</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
+				</div>
+				<!-- telecom -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Telecomunicações</h5>
+					<i class="fas fa-table pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue">Percurso Interativo</a>
 				</div>
 			</div>
 		</div>
@@ -210,19 +341,176 @@
 				<div class="card atividade text-center"  style="padding:10px;">
 					<h5 class="card-title text-center">Documentos</h5>
 					<i class="fas fa-file-alt pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Edital</a>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Edital</a>
+					<br>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/processo_seletivo/Edital_PETEE_2019.pdf" target="_blank" class="btn btn-myblue">Edital 2019</a>
 					<br>
 					<i class="fas fa-archive pet-icone"></i>
-					<a href="" target="_blank" class="btn btn-myblue">Declarações</a>
+					<a href="../doc/processo_seletivo/PETEE_ModeloDeclaracoesProcessoSeletivo2019.docx" target="_blank" class="btn btn-myblue">Declarações</a>
 				</div>
 			</div>
 		</div>
+		<!-- prototipos -->
+		<div id="prototipos" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>PROTÓTIPOS</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<div class="card-deck">
+				<!-- drawdio -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Drawdio</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_Drawdio.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+				<!-- controle remoto -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Carrinho de Controle Remoto</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_ControleRemoto.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+				<!-- braço robotico -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Braço Robótico</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_BracoRobotico.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+				<!-- desviador -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Carrinho Desviador</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_Desviador.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+				<!-- Seguidor de luz -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Robô Seguidor de Luz</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_SeguidorLuz.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+			</div>s
+		</div>
+		<!-- outros relatorios -->
+		<div id="outros-relatorios" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>OUTROS RELATÓRIOS</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<div class="card-deck">
+				<!-- videoaulas -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Videoaulas</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Relatório</a>
+				</div>
+				<!-- sincronizacao -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Sincronização Planilha e Google Agenda</h5>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/relatorios/Relatorio_SincronizacaoGoogleAgenda.pdf" target="_blank" class="btn btn-myblue">Relatório</a>
+				</div>
+			</div>
+		</div>
+		<!-- templates -->
+		<div id="templates" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>TEMPLATES</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<div class="card-deck">
+				<!-- apostila -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Apostila</h5>
+					<i class="fas fa-file-archive pet-icone"></i>
+					<a href="../doc/templates/Template_Apostila.zip" target="_blank" class="btn btn-myblue">Template</a>
+				</div>
+				<!-- slide-aula -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Slide-aula</h5>
+					<i class="fas fa-file-archive pet-icone"></i>
+					<a href="../doc/templates/Template_SlideAula.pptx" target="_blank" class="btn btn-myblue">Template</a>
+				</div>
+				<!-- relatorio -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Relatório Atividades</h5>
+					<i class="fas fa-file-archive pet-icone"></i>
+					<a href="../doc/templates/Template_RelatorioAtividade.zip" target="_blank" class="btn btn-myblue">Template</a>
+				</div>
+			</div>
+		</div>
+		<!-- chronos -->
+		<div id="chronos" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>CHRONOS</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<div class="card-deck">
+				<!-- apostila -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Versão 2020</h5>
+					<i class="fas fa-file-archive pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Programa</a>
+					<br>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="" target="_blank" class="btn btn-myblue disabled">Documentação</a>
+				</div>
+				<!-- slide-aula -->
+				<div class="card atividade text-center"  style="padding:10px;">
+					<h5 class="card-title text-center">Versão 2016</h5>
+					<i class="fas fa-file-archive pet-icone"></i>
+					<a href="../doc/chronos/Chronos_2016.zip" target="_blank" class="btn btn-myblue">Programa</a>
+					<br>
+					<i class="fas fa-file-alt pet-icone"></i>
+					<a href="../doc/chronos/Manual_Chronos.pdf" target="_blank" class="btn btn-myblue">Documentação</a>
+					<br>
+					<i class="fab fa-java pet-icone"></i>
+					<a href="https://www.java.com/pt_BR/download/" target="_blank" class="btn btn-myblue">Java</a>
+				</div>
+			</div>
+		</div>
+
+
+		<br><br><br><br>
+
 
 		<!-- rodape -->
 		<footer>
 			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			<script src="../js/sidenav.js"></script>
 		</footer>
 	</body>
 </html>
