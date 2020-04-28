@@ -441,3 +441,24 @@
 		object-fit: cover;
 	}
 
+/* seção contatos */
+.icone-contato{
+	border: 0;
+	padding: 10px;
+	font-size: 30px;
+	color: #0D47A1;
+	margin-bottom: 20px;
+}
+.contato-link{
+	color: #272727;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contato-link:hover{
+	color: #0D47A1;
+}
+
+.contato-link:hover > .icone-contato{
+	background-color: #0D47A1;
+	color: white;
+}
