@@ -395,13 +395,34 @@
 	top: 0; 
 	left: 0;
 	overflow-x: hidden; 
-	padding-top: 20px; 
+	padding-top: 96px; 
 	transition: 0.5s; 
   }
   
   @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
+  }
+
+  .nav-link-myblue {
+	border: 1px solid transparent;
+	color: #6C757D;
+	border-radius: 0.25rem;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 0rem;
+  }
+
+  .nav-link-myblue:hover, .nav-link-myblue:focus {
+	text-decoration: none;
+	color: white;
+	/* color: #0D47A1; */
+	background-color:#6C757D;
+  }
+
+  .nav-link-myblue.active{
+	color: white;
+	background-color: #0C2C84;
   }
 
   #sidenavToggler{
@@ -413,7 +434,7 @@
 	margin-left: 0%;
 	border-top-right-radius: 50%;
 	border-bottom-right-radius: 50%;
-	border: 0px;
+	border: 0;
   }
 
 	/*Mais Projetos*/
