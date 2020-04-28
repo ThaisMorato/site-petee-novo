@@ -312,11 +312,39 @@
 		border: 0;
 	}
 
-/* Processo Seletivo */
+/* Pagina Processo Seletivo */
 	.pet-icone-seletivo{
 		font-size: 100px;
 		color: #0D47A1;
 		padding: 50px;
+	}
+
+	.processo .card-text{
+		text-align: justify;
+	}
+	
+	.processo .card-img-top{
+		padding-bottom: 20px;
+	}
+	
+	.processo .card-title{
+		text-align: left;
+	}
+		
+	.processo:hover{
+		background-color: #E6E6E6;
+	}
+	
+	.processo{
+		margin-bottom: 30px;
+		background-color: #F8F8F8;
+		transition-duration: 0.5s;
+	}
+
+	.processo img{
+		width:100%;
+		height: 220px;
+		object-fit: cover;
 	}
 
 /* Banner Carrossel */
@@ -385,3 +413,29 @@
 	border-bottom-right-radius: 50%;
 	border: 0px;
   }
+
+	/*Mais Projetos*/
+	.maisprojetos .card-text{
+		text-align: justify;
+	}
+
+	.maisprojetos .card-title{
+		text-align: left;
+	}
+	
+	.maisprojetos{
+		margin-bottom: 30px;
+		background-color: #F8F8F8;
+		transition-duration: 0.5s;
+	}
+
+	.maisprojetos:hover{
+		background-color: #E6E6E6;
+	}
+
+	.maisprojetos img{
+		width:100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
