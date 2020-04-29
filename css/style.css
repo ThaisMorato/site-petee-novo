@@ -483,3 +483,12 @@
 	background-color: #0D47A1;
 	color: white;
 }
+/* Página Protótipo*/
+.prototipo img{
+	object-fit: cover;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-right: 15px;
+	width: 200px;
+	height: 200px;
+}
