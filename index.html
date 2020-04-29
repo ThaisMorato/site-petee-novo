@@ -762,7 +762,51 @@
 					</div>
 				</div>
 			</div>
+			<!-- fale conosco -->
+			<h5 class="text-center">Fale Conosco</h5>
+			<div class="row justify-content-center form-group">
+				<div class="col-12">
+					<form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
+						<div class="row">
+							<div class="col">
+								<label for="name" class="">Seu Nome</label>
+								<input type="text" id="name" name="name" class="form-control" placeholder="Insira seu nome aqui">
+							</div>
+							<div class="col">
+								<label for="email" class="">Seu E-mail</label>
+								<input type="text" id="email" name="email" class="form-control" placeholder="Insira seu e-mail aqui">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<label for="subject" class="">Assunto</label>
+								<input type="text" id="subject" name="subject" class="form-control" placeholder="Preencha o assunto do e-mail">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<label for="message">Mensagem</label>
+								<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Preencha o corpo do e-mail"></textarea>
+							</div>
+						</div>
+					</form>
+					<div class="text-center" style="padding-top: 1px;">
+						<a class="btn btn-myblue" onclick="document.getElementById('contact-form').submit();" style="color: white;">Enviar</a>
+					</div>
+					<div class="status"></div>
+				</div>
+				
+			</div>
 		</div>
+		
+		
+
+
+
+
+
+
+
 		<!-- endereço -->
 		<!-- <div class="col-lg-4 text-center">
 			<a class="contato-link" target="_blank" href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US"><i class="fas fa-map-marker-alt icone-contato rounded-circle" target="_blank"></i><br>UFMG - Campus Pampulha - Escola de Engenharia - Bloco 3 - Sala 1050</a>
@@ -778,6 +822,7 @@
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 			<script src="js/main.js"></script>
+			<script src="js/validateForm.js"></script>
 		</footer>
 	</body>
 </html>
