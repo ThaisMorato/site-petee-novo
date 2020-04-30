@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html style="margin-left: 22%;">
+	<head>
+		<!-- definicoes principais -->
+		<meta charset="UTF-8">
+		<title>Manual da Engenharia Elétrica</title>
+		
+		<!-- link do google para as fontes que serão utilizadas -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Condensed' - Texto -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Slab' - Títulos -->
+		
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!-- icones fontawesome -->
+		<link href="../ref/css/font_awesome/css/all.css" rel="stylesheet">
+		
+		<!-- stylesheet do site -->
+		<link href="../ref/css/style.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="../ref/img/logos/simbolo_petee_600x600.png">
+	</head>
+	<body>
+		<!-- navbar -->
+		<header>
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+			  <!-- Brand -->
+			  <a class="navbar-brand" href="#">
+				<img src="../ref/img/logo_petee_branca.png" style="height: 45px">
+			  </a>
+
+			  <!-- Toggler/collapsibe Button -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class="fas fa-bars icone-navbar"></i>
+			  </button>
+
+			  <!-- Navbar links -->
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="#pet">O Que é PET?</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#proposta">Nossa Proposta</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#minicursos-oficinas">Minicursos e Oficinas</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+        </header>
+        <!-- nav lateral -->
+        <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
+            <div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
+				<!-- Aproveitamento de Estudos -->
+				<a class="nav-link-myblue active" id="nav-aproveitamento-tab" data-toggle="tab" href="#nav-aproveitamento" role="tab" aria-controls="nav-aproveitamento" aria-selected="true">Aproveitamento de Estudos</a>
+				<!-- Atividades Academicas -->
+				<a class="nav-link-myblue" id="nav-academicas-tab" data-toggle="tab" href="#nav-academicas" role="tab" aria-controls="nav-academicas" aria-selected="false">Atividades Acadêmicas</a>
+				<!-- controle remoto -->
+				<a class="nav-link-myblue" id="nav-extracurriculares-tab" data-toggle="tab" href="#nav-extracurriculares" role="tab" aria-controls="nav-extracurriculares" aria-selected="false">Atividades Extracurriculares</a>
+				<!-- drawdio -->
+				<a class="nav-link-myblue" id="nav-drawdio-tab" data-toggle="tab" href="#nav-drawdio" role="tab" aria-controls="nav-drawdio" aria-selected="false">Drawdio</a>
+				<!-- seguidor de luz -->
+				<a class="nav-link-myblue" id="nav-luz-tab" data-toggle="tab" href="#nav-luz" role="tab" aria-controls="nav-luz" aria-selected="false">Seguidor de Luz</a>
+				<!-- sincronizador -->
+                <a class="nav-link-myblue" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="false">Sincronizador Google Agendaelatórios</a>
+            </div>
+		</nav>
+		<!-- Toggler da Nav lateral -->
+		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 15%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+		<!-- Titulo -->
+		<div id="Titulo" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>Manual da Engenharia Elétrica</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-md-12 col-lg-9 text-justify">
+					<p>O Programa de Educação Tutorial da Engenharia Elétrica – PETEE, elaborou este guia para acompanhar os alunos do curso de Engenharia Elétrica durante todo percurso acadêmico, um pequeno manual de consulta para ajudá-lo a resolver os problemas e dúvidas dentro da universidade de forma rápida e efetiva.</p>
+				</div>
+            </div>
+		</div>
+        <!--Conteudo selecionado pelo nav lateral-->
+        <div id="conteudo" class="container-fluid" style="padding-top: 40px;">
+            <div class="tab-content" id="nav-tabContent">
+                <!--Aproveitamento de Estudos-->
+                <div class="tab-pane fade show active" id="nav-aproveitamento" role="tabpanel" aria-labelledby="nav-aproveitamento-tab">
+                    <!-- titulo -->
+			        <div class="row justify-content-center">
+				        <div class="col-12">
+					        <h1>Aproveitamento de Estudos</h1>
+				        </div>
+			        </div>
+			        <!-- linha abaixo do titulo -->
+			        <div class="row justify-content-center align-items-center">
+				        <hr class="linha">
+				        <i class="fas fa-circle linha-circulo"></i>
+				        <i class="fas fa-chevron-circle-down linha-icone"></i>
+                    </div>
+			        <!-- descricao -->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>Caso você tenha vindo de uma outra universidade ou outro curso na UFMG, é possível eliminar as disciplinas que você já fez e que fazem parte da grade da Engenharia Elétrica. Para isso, é preciso solicitar o aproveitamento de estudos no Colegiado da Elétrica. A coordenação vai avaliar a equivalência entre o programa das disciplinas que você já fez (conteúdo e carga horária) com alguma disciplina existente na UFMG. Se estiver tudo certo, você será dispensado.</p>
+                        </div>
+                    </div>
+                    <!--Datas e local da solicitacao-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Datas e local da solicitação</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>O prazo para protocolar a solicitação de aproveitamento de estudos é estipulado no Calendário Acadêmico da UFMG e a solicitação deve ser feita no Colegiado do Curso.</p>
+                        </div>
+                    </div>
+                    <!--Outras informacoes-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Outras informações</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>Quando o resultado do aproveitamento sair, será registrado no sistema acadêmico as disciplinas que foram dispensadas. Caso seu pedido não seja aceito, o Colegiado vai te mandar um email informando o indeferimento.</p>
+                            <p>É sugerido que se o aluno estiver matriculado na disciplina em que pediu dispensa, frequente as aulas até que obtenha resposta do processo. Caso isso não aconteça e o aproveitamento de estudos não seja aprovado, o aluno pode ser reprovado na disciplina.</p>
+                            <p>Outra coisa é que as notas das atividades dispensadas não serão consideradas para o cálculo de RSG.</p>
+                        </div>
+                    </div>
+                    <!--Documentacao-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Documentação</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+                            <ul>
+                                <li>Programa completo da disciplina a qual se deseja dispensar;</li>
+                                <li>Histórico escolar;</li>
+                                <li>Formulário de requerimento.</li>
+                            </ul>
+                            <p>Todos formulários para o aproveitamento estão no moodle do Colegiado, na pasta “Formulários”. O passo a passo para acessar os documentos se encontra a seguir:</p>
+                        </div>
+                    </div>
+                    <!--Navbar passo-a-passo-->
+                    <div id="aproveitamento_passo_a_passo">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link-myblue active" id="pills-passo_um-tab" data-toggle="pill" href="#pills-passo_um" role="tab" aria-controls="pills-passo_um" aria-selected="true">1&deg; Passo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-myblue" id="pills-passo_dois-tab" data-toggle="pill" href="#pills-passo_dois" role="tab" aria-controls="pills-passo_dois" aria-selected="false">2&deg; Passo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-myblue" id="pills-passo_tres-tab" data-toggle="pill" href="#pills-passo_tres" role="tab" aria-controls="pills-passo_tres" aria-selected="false">3&deg; Passo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-myblue" id="pills-passo_quatro-tab" data-toggle="pill" href="#pills-passo_quatro" role="tab" aria-controls="pills-passo_quatro" aria-selected="false">4&deg; Passo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-myblue" id="pills-passo_cinco-tab" data-toggle="pill" href="#pills-passo_cinco" role="tab" aria-controls="pills-passo_cinco" aria-selected="false">5&deg; Passo</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-passo_um" role="tabpanel" aria-labelledby="pills-passo_um-tab">
+                                <div class="col-9">
+                                    <img class="img-fluid" src="../ref/img/manual/aproveitamento_de_estudos/passo1.png">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-passo_dois" role="tabpanel" aria-labelledby="pills-passo_dois-tab">
+                                <div class="col-9">
+                                    <img class="img-fluid" src="../ref/img/manual/aproveitamento_de_estudos/passo2.png">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-passo_tres" role="tabpanel" aria-labelledby="pills-passo_tres-tab">
+                                <div class="col-9">
+                                    <img class="img-fluid" src="../ref/img/manual/aproveitamento_de_estudos/passo3.png">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-passo_quatro" role="tabpanel" aria-labelledby="pills-passo_quatro-tab">
+                                <div class="col-9">
+                                    <img class="img-fluid" src="../ref/img/manual/aproveitamento_de_estudos/passo4.png">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-passo_cinco" role="tabpanel" aria-labelledby="pills-passo_cinco-tab">
+                                <div class="col-9">
+                                    <img class="img-fluid" src="../ref/img/manual/aproveitamento_de_estudos/passo5.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Atividades Acadêmicas-->
+                <div class="tab-pane fade" id="nav-academicas" role="tabpanel" aria-labelledby="nav-academicas-tab">
+                    <!-- titulo -->
+			        <div class="row justify-content-center">
+				        <div class="col-12">
+					        <h1>Atividades Acadêmicas</h1>
+				        </div>
+			        </div>
+			        <!-- linha abaixo do titulo -->
+			        <div class="row justify-content-center align-items-center">
+				        <hr class="linha">
+				        <i class="fas fa-circle linha-circulo"></i>
+				        <i class="fas fa-chevron-circle-down linha-icone"></i>
+                    </div>
+                    <!-- sem descricao: espacamento -->
+                    <br style="height: 20px">
+                    <!--Monitoria-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Monitoria</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>Diversas disciplinas durante o curso oferecem ao aluno a oportunidade de auxílio fora da sala de aula com os programas de monitoria. Neles é possível contar com a ajuda de um monitor, um aluno que já foi aprovado na matéria, para ajudar e tirar dúvidas de qualquer problema que aparecer durante os estudos.</p>
+                            <p>Os horários das monitorias dependem da disciplina e da demanda. Geralmente, as mais requisitadas têm maior disponibilidade de monitor. O mais indicado ao aluno é perguntar quais são esses horários ao professor de cada matéria.</p>
+                            <p>Para se tornar um monitor é necessário que o aluno tenha sido aprovado na disciplina desejada com certo êxito (pode-se ou não exigir uma nota mínima). Também é exigido que o RSG (Rendimento Semestral Global) do semestre anterior seja igual ou superior a 2, portanto, alunos do primeiro período não podem se candidatar. Por fim, os interessados passarão por um exame de comprovação de conhecimento, relacionado à disciplina, onde serão selecionados de acordo com a média obtida.</p>
+                            <p>Cabe ao interessado em se tornar um monitor ficar atento ao lançamento de editais, divulgados pelo colegiado na lista da elétrica, em seu e-mail. Também é importante consultar o site da PROGRAD (Pró Reitoria de Graduação), <a href="https://www2.ufmg.br/prograd" target="_blank">https://www2.ufmg.br/prograd</a> pois nele é possível ter informações como a cota de bolsas disponíveis para o ano.</p>
+                            <p>O aluno que cumprir um programa de monitoria por no mínimo um semestre poderá pleitear a integralização de até um crédito. Para isso, deverá procurar o colegiado do curso e apresentar os seguintes itens:</p>
+                            <ul>
+                                <li>Plano de trabalho aprovado previamente pelo Colegiado de Curso;</li>
+                                <li>Relatório conclusivo, elaborado pelo aluno, sobre as atividades desenvolvidas no projeto, devidamente analisado e aprovado pelo professor orientador;</li>
+                                <li>Avaliação das atividades desenvolvidas pelo orientador, com atribuição de nota e conceito.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--IC-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Iniciação Científica(IC)</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>A iniciação científica é uma modalidade de pesquisa acadêmica desenvolvida pelos próprios alunos de graduação orientados por um tutor. Como o próprio nome diz, não deve ser necessária experiência prática para participar de uma IC, uma vez que nela será apresentada a oportunidade de iniciar sua busca por conhecimento prático.</p>
+                            <p>Atuar em um projeto de iniciação Científica é de fundamental importância para a completa formação do aluno como engenheiro, uma vez que nele adquirem-se conhecimentos essenciais que não se obtém em sala de aula. Em geral, os diversos programas oferecidos têm o objetivo de iniciar o aluno na produção de conhecimento e na convivência cotidiana com o procedimento cientifico, assim como estimular a descoberta de inovações tecnológicas. É oferecida ao aluno a oportunidade de desenvolver a escrita acadêmica, apresentar resultados em eventos, aprender a sistematizar ideias, a sintetizar observações ou experiências, elaborar relatórios e demais atividades envolvendo o ofício de pesquisador.</p>
+                            <p>Os programas de Iniciação Científica oferecidos na UFMG geralmente requerem uma carga horária mínima, mas oferecem ao aluno a oportunidade de montar um horário flexível que se encaixe na sua grade de matérias. Dessa forma, não é necessário se preocupar se atuar em um projeto o impedirá de cumprir as disciplinas do curso.</p>
+                            <p>Querendo o aluno ingressar em uma IC, cabe ao próprio ir atrás daquelas que lhe interessam. Uma das principais formas de conseguir uma vaga é procurar professoresque atuam em projetos e, literalmente, pedir para participar. É importante também se manter sempre atento aos editais que são liberados durante o ano. Estes são amplamente divulgados pelo colegiado na lista da elétrica. Portanto, deve-se manter o e-mail vinculado ao colegiado sempre atualizado. Essas vagas oferecidas são ofertadas inicialmente à Central de Oportunidades, portanto é interessante ficar atento ao site  <a href="https://centraloportunidades.eng.ufmg.br/documentos.html" target="_blank">https://centraloportunidades.eng.ufmg.br/documentos.html</a>. Na seção “bolsas” estão dispostos os editais de IC disponíveis.</p>
+                            <p>O aluno que participar de uma iniciação científica por no mínimo um ano pode procurar o colegiado do curso e pedir a integralização de 2 créditos em atividades de formação complementar. Se forem cumpridos dois projetos, o estudante, além de receber os créditos referidos, pode ainda atribuir mais 1 crédito pela mesma formação. Para realizar esses procedimentos, no entanto, são exigidas as documentações abaixo:</p>
+                            <ul>
+                                <li>Formulário de indicação do bolsista assinado pelo orientador, indicando órgão de fomento financiador da bolsa ou plano de trabalho aprovado previamente pelo Colegiado de Curso, para os casos de programas sem bolsa;</li>
+                                <li>Monografia desenvolvida pelo aluno detalhando as atividades técnicas realizadas, sua relevância e justificativas técnicas, metodologia de trabalho e principais resultados, devidamente aprovada por seu orientador;</li>
+                                <li>Avaliação das atividades desenvolvidas pelo orientador, com atribuição de nota e conceito;</li>
+                                <li>Comprovante de apresentação do trabalho desenvolvido em uma Mostra de Trabalhos de Iniciação Científica, como por exemplo, a Semana de Graduação da UFMG.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Projetos de Extensão-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Projetos de Extensão</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>A extensão universitária ou extensão acadêmica é uma ação de uma universidade junto à comunidade a seu redor, disponibilizando, ao público externo à universidade, o conhecimento adquirido com o ensino e a pesquisa desenvolvidos dentro da universidade. Essa ação produz um novo conhecimento a ser trabalhado e articulado.</p>
+                            <p>A ideia de extensão está associada à crença de que o conhecimento gerado pelas instituições de pesquisa deve necessariamente possuir intenções de transformar a realidade social, intervindo em suas deficiências e não se limitando apenas à formação dos alunos regulares daquela instituição.</p>
+                        </div>
+                    </div>
+                    <!--Estagios-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Estágios</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>O estágio é uma importante forma de aprimoramento profissional do estudante, pois possibilita um contato empírico com as matérias teóricas que lhe são passadas em sala de aula, fazendo assim o gancho entre teoria e prática, importantes para qualquer engenheiro.</p>
+                            <p>Todos os alunos deverão cumprir o estágio curricular obrigatório (EC), este se encaixa na grade curricular do curso e deve ser feito após a integralização de, pelo menos, 1800 horas (120 créditos). Sendo assim, sua realização está prevista a partir do 8º período.</p>
+                            <p>O estágio obrigatório deve ter duração de, no mínimo, 195 horas. Sendo que, dessas, 15 horas são relacionadas a atividades de acompanhamento em sala de aula e o restante, 180 horas, ao estágio em si. No entanto, essa carga horária deve ser cumprida obrigatoriamente em mais de 2 meses. Com isso, após seu término o aluno terá conseguido obter 13 créditos.</p>
+                            <p>É oferecida ainda a possibilidade de cumprimento do estágio com atividades de extensão, mediante a participação do estudante em empreendimentos e projetos de interesse social, desde que essas atividades tenham possuído a carga horária mínima (180 horas) e se encaixem com os pré-requisitos do EC. Projetos de iniciação cientifica, acadêmicos (como o PET) e monitorias não são contados para isso.</p>
+                            <p>O aluno pode ainda realizar o estágio não obrigatório. Este entra no âmbito das atividades de formação complementar. Para isto, no entanto, é necessário já ter sido aprovado em todas as disciplinas do 1º ao 4º período, ou ter cumprido 91 créditos e ter rendimento semestral global (RSG) maior ou igual a 2. Como formação complementar é possível aproveitar até 2 créditos por esta atividade.</p>
+                        </div>
+                    </div>
+                    <!--Central de Oportunidades-->
+			        <div class="row justify-content-center">
+				        <div class="col-12 ">
+                            <h3>Central de Oportunidades</h3>
+				        </div>
+                    </div>
+                    <!--espacamento-->
+                    <br style="height: 20px">
+                    <!--descricao-->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>Quem deseja iniciar um estágio, seja obrigatório ou não, deve ficar atento às oportunidades divulgadas muitas vezes pelo colegiado do curso. Diversos editais são abertos durante o ano. Cabe, então, ao aluno encontrar o que lhe interessa e participar do processo seletivo. Outra ferramenta importante para a busca é a Central de Oportunidades.</p>
+                            <p>A Central é o setor responsável pela divulgação de bolsas de graduação, como monitorias e iniciação científica, bem como pela captação, análise e divulgação de vagas de estágio para alunos dos cursos de Engenharia e de emprego para os ex-alunos da instituição. Ela incentiva ações que reforçam o vínculo e compromisso do setor com a colocação dos alunos da graduação e dos já formados no mercado de trabalho. Sendo o setor responsável por todo o controle de estágios da Escola de Engenharia da UFMG é a partir dela que os documentos são administrados e encaminhados para assinaturas.</p>
+                            <p>Portanto, para ingressar num estágio o estudante deve inicialmente procurar a Central, pegar e levar os documentos necessários. Estes documentos são disponibilizados no site <a href="https://centraloportunidades.eng.ufmg.br" target="_blank">https://centraloportunidades.eng.ufmg.br</a> Nele também há uma seção de dúvidas frequentes, onde é possível esclarecer pontos sobre prazos, documentações, carga horária, etc. Para mais informações, procure a sala da central, cujo número e horários de atendimento também são disponibilizados no site acima.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Atividades Extracurriculares -->
+                <div class="tab-pane fade" id="nav-extracurriculares" role="tabpanel" aria-labelledby="nav-extracurriculares-tab">
+                    <!-- titulo -->
+			        <div class="row justify-content-center">
+				        <div class="col-12">
+					        <h1>Atividades Extracurriculares</h1>
+				        </div>
+			        </div>
+			        <!-- linha abaixo do titulo -->
+			        <div class="row justify-content-center align-items-center">
+				        <hr class="linha">
+				        <i class="fas fa-circle linha-circulo"></i>
+				        <i class="fas fa-chevron-circle-down linha-icone"></i>
+                    </div>
+			        <!-- descricao -->
+			        <div class="row justify-content-center descricao">
+				        <div class="col-md-12 col-lg-12 text-justify">
+					        <p>Além do PET, a Escola de Engenharia oferece diversas outras oportunidades extracurriculares para que os alunos de Engenharia Elétrica possam complementar o conhecimento adquirido em sala de aula e obter experiências que podem até mesmo ir além dos muros da universidade, em com competições e eventos. Conversamos com membros destes órgãos e vamos descrever com a palavra destes membros o papel de cada um deles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- rodape -->
+		<footer>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="../ref/js/sidenav.js"></script>
+		</footer>
+	</body>
+</html>

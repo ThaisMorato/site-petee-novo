@@ -27,6 +27,13 @@
 	font-size: 15px;
 	}
 
+	li{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		color: #6C757D;
+		font-size: 15px;
+	}
+
 	h4{
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
