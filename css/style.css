@@ -38,6 +38,13 @@
 		transition: 0.5s;
 		margin-left: 0%;
 	}
+
+	li{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #6C757D;
+	font-size: 15px;
+	}
 	
 	.descricao{
 		padding-bottom: 20px;
