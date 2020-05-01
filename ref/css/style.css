@@ -3,7 +3,7 @@
 		scroll-behavior: smooth;
 		margin-left: 7%;
 		margin-right: 7%;
-		margin-bottom: 20px;
+		/* margin-bottom: 20px; */
 		transition: 0.5s;
 	}
 
@@ -391,7 +391,7 @@
 		margin: 0px 120px 100px 120px;
 	}
 
-/* Pagina Downloads Nav Lateral */
+/* Nav Lateral */
 
 .sidenav {
 	height: 100%; 
@@ -489,6 +489,38 @@
 	background-color: #0D47A1;
 	color: white;
 }
+
+/* rodape */
+.myfooter{
+	width: 100%;
+	position: absolute;
+	margin-left: -7%;
+	/* left: 49%;
+	right: 49%;
+	margin-left: -50vw;
+	margin-right: -50vw; */
+	padding-bottom: 2%;
+	padding-top: 1%;
+ }
+
+.icone-rodape{
+	border: 0;
+	padding: 10px;
+	font-size: 30px;
+	color: #E6E6E6;
+	margin-bottom: 20px;
+}
+
+.icone-rodape:hover{
+	color: #0D47A1;
+	background-color: #E6E6E6;
+}
+
+footer{
+	margin: 0;
+	padding: 0;
+}
+
 /* Página Protótipo*/
 .prototipo img{
 	object-fit: cover;
