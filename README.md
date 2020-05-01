@@ -45,6 +45,11 @@ $ git push origin branch
 $ git branch -d branch
 ```
 
+**9)** Sincronizar branches existentes (opcional) 
+```
+$ git fetch -p
+```
+
 **b)** Coloborador 1:
 ---------------------
 
