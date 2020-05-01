@@ -40,6 +40,11 @@ $ git commit -m "msg"
 $ git push origin branch
 ```
 
+**8)** Deletar o branch LOCALMENTE (opcional) (o segundo branch deve ser substituído pelo nome do branch)
+```
+$ git branch -d branch
+```
+
 **b)** Coloborador 1:
 ---------------------
 
