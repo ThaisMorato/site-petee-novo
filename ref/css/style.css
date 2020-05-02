@@ -570,4 +570,11 @@ footer{
   ::-webkit-scrollbar-thumb:hover {
 	background: #0C2C84;
   }
-  
+
+/* Página manual_home*/
+.manualhome img{
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
