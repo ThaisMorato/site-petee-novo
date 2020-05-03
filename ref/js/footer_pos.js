@@ -1,5 +1,5 @@
 let resizeObserver = new ResizeObserver(() => { 
-    if($(window).height() > $('html').height()){
+    if($(window).height() > $('html').height()+$('#rodape').height()){
         // console.log('Mudou de tamanho e ta pequeno')
         $('#rodape')
             .removeClass('my-footer')
