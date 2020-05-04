@@ -118,7 +118,7 @@
 /*sessao proposta*/
 	.proposta{
 		text-align: center;
-		padding-bottom: 20px;
+		padding-top: 20px;
 	}
 	
 	.proposta-texto{
@@ -150,14 +150,30 @@
 		object-fit: cover;
 	}
 	
-	#grupo .fazer-parte .card{
+	#grupo .card{
 		margin: auto;
 		background-color: #F8F8F8;
+		transition: background-color 0.5s;
+
 	}
 	
-	#grupo .foto-equipe img{
-		object-fit: cover;
+	#grupo .card:hover{
+		background-color: #E6E6E6;
+	}
+	
+	#grupo .img-zoom{
+		overflow: hidden;
+	}
+	
+	#grupo .img-zoom img{
 		width: 100%;
+		object-fit: cover;
+		transition: transform 0.2s ease-in-out;
+
+	}
+	
+	#grupo .foto-equipe img:hover{
+		transform: scale(1.03);
 	}
 	
 	#grupo .fazer-parte p{
@@ -203,6 +219,13 @@
 		width: 90px;
 	}
 	
+	#grupo .card-body{
+		margin-left: 12px;
+		margin-right: 12px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	
 /*sessao minicursos e oficinas*/
 	.atividade .card-text{
 		text-align: justify;
@@ -219,7 +242,7 @@
 	.atividade{
 		margin-bottom: 30px;
 		background-color: #F8F8F8;
-		transition: transform 0.2s ease-in-out;
+		transition: transform 0.2s ease-out;
 	}
 	
 	.atividade:hover{
@@ -265,11 +288,20 @@
 		margin-bottom: 10px;
 	}
 	
+	.img-cora .img-zoom{
+		overflow: hidden;
+		border-radius: 15px;
+	}
+	
 	.img-cora img{
 		width: 100%;
 		height: 350px;
 		object-fit: cover;
-		border-radius: 15px;
+		transition: transform 0.2s ease-out;
+	}
+	
+	.img-cora img:hover{
+		transform: scale(1.03);
 	}
 	
 	.text-cora{
@@ -443,7 +475,7 @@
 	border: 0;
   }
 
-	/*Mais Projetos*/
+/*Mais Projetos*/
 	.maisprojetos .card-text{
 		text-align: justify;
 	}
@@ -453,7 +485,6 @@
 	}
 	
 	.maisprojetos{
-		margin-bottom: 30px;
 		background-color: #F8F8F8;
 		transition-duration: 0.2s;
 	}
@@ -463,9 +494,8 @@
 	}
 
 	.maisprojetos img{
-		width:100%;
-		height: 200px;
-		object-fit: cover;
+		padding: 12px;
+		object-fit: contain;
 	}
 
 /* seção contatos */
