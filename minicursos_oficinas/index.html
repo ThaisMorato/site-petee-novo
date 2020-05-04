@@ -95,15 +95,15 @@
 		<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
 			<div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
 				<!-- oficinas -->
-				<a class="nav-link-myblue active" id="oficina-tab" data-toggle="tab" href="#oficina" role="tab" aria-controls="oficina" aria-selected="true">Oficinas de Seguidor de Linha</a>
+				<a class="nav-link-myblue active" id="oficina" data-toggle="tab" href="#tab-oficina" role="tab" aria-controls="tab-oficina" aria-selected="true" onclick="location.hash = 'oficina'">Oficinas de Seguidor de Linha</a>
 				<!-- matlab -->
-				<a class="nav-link-myblue" id="matlab-tab" data-toggle="tab" href="#matlab" role="tab" aria-controls="matlab" aria-selected="false">Minicurso de MATLAB</a>
+				<a class="nav-link-myblue" id="matlab" data-toggle="tab" href="#tab-matlab" role="tab" aria-controls="tab-matlab" aria-selected="false" onclick="location.hash = 'matlab'">Minicurso de MATLAB</a>
 				<!-- web -->
-				<a class="nav-link-myblue" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">Minicurso de Web Design</a>
+				<a class="nav-link-myblue" id="web" data-toggle="tab" href="#tab-web" role="tab" aria-controls="tab-web" aria-selected="false" onclick="location.hash = 'web'">Minicurso de Web Design</a>
 				<!-- python -->
-				<a class="nav-link-myblue" id="python-tab" data-toggle="tab" href="#python" role="tab" aria-controls="python" aria-selected="false">Minicurso de Python</a>
+				<a class="nav-link-myblue" id="python" data-toggle="tab" href="#tab-python" role="tab" aria-controls="tab-python" aria-selected="false" onclick="location.hash = 'python'">Minicurso de Python</a>
 				<!-- latex -->
-				<a class="nav-link-myblue" id="latex-tab" data-toggle="tab" href="#latex" role="tab" aria-controls="latex" aria-selected="false">Minicurso de LaTeX</a>
+				<a class="nav-link-myblue" id="latex" data-toggle="tab" href="#tab-latex" role="tab" aria-controls="tab-latex" aria-selected="false" onclick="location.hash = 'latex'">Minicurso de LaTeX</a>
 			</div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
@@ -111,7 +111,7 @@
 		<!-- minicursos e oficinas -->
 		<div id="conteudos" class="tab-content" id="nav-tabContent" style="padding-top: 96px">
 			<!-- oficina -->
-			<div class="container-fluid tab-pane fade show active" id="oficina" role="tabpanel" aria-labelledby="oficina-tab">
+			<div class="container-fluid tab-pane fade show active" id="tab-oficina" role="tabpanel" aria-labelledby="oficina">
 				<!-- titulo -->
 				<div class="row justify-content-center">
 					<div class="col-12">
@@ -264,7 +264,7 @@
 				</div>
 			</div>
 			<!-- matlab -->
-			<div class="container-fluid tab-pane fade" id="matlab" role="tabpanel" aria-labelledby="matlab-tab">
+			<div class="container-fluid tab-pane fade" id="tab-matlab" role="tabpanel" aria-labelledby="matlab">
 				<!-- titulo -->
 				<div class="row justify-content-center">
 					<div class="col-12">
@@ -397,7 +397,7 @@
 				</div>
 			</div>
 			<!-- web -->
-			<div class="container-fluid tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+			<div class="container-fluid tab-pane fade" id="tab-web" role="tabpanel" aria-labelledby="web">
 				<!-- titulo -->
 				<div class="row justify-content-center">
 					<div class="col-12">
@@ -436,7 +436,7 @@
 								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> JQuery</p>
 							</div>
 						</div>
-						<p>Não há pré-requisitos para participar do curso, recomenda-se apenas a instalação de um bom editor de texto e de um navegador. Além disso, noções de programação e de edição de imagem podem complementar as habiliades desenvolvidas durante o curso. Este não é, entretanto, um curso voltado para programação. Para os estudantes que também desejam aprender a programar, oferecemos o <a href="#python-tab" onclick="document.querySelector('#python-tab').click()">Minicurso de Python</a>.</p>
+						<p>Não há pré-requisitos para participar do curso, recomenda-se apenas a instalação de um bom editor de texto e de um navegador. Além disso, noções de programação e de edição de imagem podem complementar as habiliades desenvolvidas durante o curso. Este não é, entretanto, um curso voltado para programação. Para os estudantes que também desejam aprender a programar, oferecemos o <a href="#python" onclick="document.querySelector('#python').click()">Minicurso de Python</a>.</p>
 					</div>
 				</div>
 				<!-- cards com materiais -->
@@ -468,7 +468,7 @@
 				</div>
 			</div>
 			<!-- python -->
-			<div class="container-fluid tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
+			<div class="container-fluid tab-pane fade" id="tab-python" role="tabpanel" aria-labelledby="python">
 				<!-- titulo -->
 				<div class="row justify-content-center">
 					<div class="col-12">
@@ -586,7 +586,7 @@
 				</div>
 			</div>
 			<!-- latex -->
-			<div class="container-fluid tab-pane fade" id="latex" role="tabpanel" aria-labelledby="latex-tab">
+			<div class="container-fluid tab-pane fade" id="tab-latex" role="tabpanel" aria-labelledby="latex">
 				<!-- titulo -->
 				<div class="row justify-content-center">
 					<div class="col-12">
