@@ -135,7 +135,7 @@
 					color 0.5s;
 	}
 	
-	.proposta:hover > .icone-proposta{
+	.proposta:hover .icone-proposta{
 		background-color: #0D47A1;
 		color: white;
 	}
@@ -242,11 +242,12 @@
 	.atividade{
 		margin-bottom: 30px;
 		background-color: #F8F8F8;
-		transition: transform 0.2s ease-out;
+		transition: transform 0.2s ease-out, background-color 0.2s;
 	}
 	
 	.atividade:hover{
 		transform: scale(1.03);
+		background-color: #E6E6E6;
 	}
 	
 	.btn{
@@ -484,53 +485,46 @@
 		text-align: left;
 	}
 	
-	.maisprojetos{
-		background-color: #F8F8F8;
-		transition-duration: 0.2s;
-	}
-
-	.maisprojetos:hover{
-		background-color: #E6E6E6;
-	}
-
 	.maisprojetos img{
 		padding: 12px;
 		object-fit: contain;
 	}
 
 /* seção contatos */
-.icone-contato{
-	border: 0;
-	padding: 10px;
-	font-size: 30px;
-	color: #0D47A1;
-	margin-bottom: 20px;
-}
-.contato-link{
-	color: #272727;
-	font-family: 'Roboto', sans-serif;
+	.contato:hover p{
+		color: #0D47A1;
+	}
+
+	.fale-conosco-area{
+		border-bottom: 1px solid #0D47A1;
+		width: 100%;
+		padding: 1em;
+		border-radius: 1em;
+	}
+
+	label{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
 }
 
-.contato-link:hover{
-	color: #0D47A1;
-}
-
-.contato-link:hover > .icone-contato{
-	background-color: #0D47A1;
-	color: white;
-}
-
-.fale-conosco-area{
-	border-bottom: 1px solid #0D47A1;
-	width: 100%;
-	padding: 1em;
-	border-radius: 1em;
-}
-
-label{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-}
+	.contato{
+		text-align: center;
+		padding-top: 20px;
+	}
+	
+	.icone-contato{
+		font-size: 24px;
+		color: #0D47A1;
+		margin-bottom: 20px;
+		background-color: #F8F8F8;
+		transition: background-color 0.5s,
+					color 0.5s;
+	}
+	
+	.contato:hover .icone-contato{
+		background-color: #0D47A1;
+		color: white;
+	}
 
 /* rodape */
 .myfooter{
