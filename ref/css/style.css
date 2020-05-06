@@ -491,46 +491,28 @@
 	}
 
 /* seção contatos */
-.icone-contato{
-	border: 0;
-	padding: 10px;
-	font-size: 30px;
-	color: #0D47A1;
-	margin-bottom: 20px;
-}
-.contato-link{
-	color: #272727;
-	font-family: 'Roboto', sans-serif;
+	.contato:hover p{
+		color: #0D47A1;
+	}
+
+	.fale-conosco-area{
+		border-bottom: 1px solid #0D47A1;
+		width: 100%;
+		padding: 1em;
+		border-radius: 1em;
+	}
+
+	label{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
 }
 
-.contato-link:hover{
-	color: #0D47A1;
-}
-
-.contato-link:hover > .icone-contato{
-	background-color: #0D47A1;
-	color: white;
-}
-
-.fale-conosco-area{
-	border-bottom: 1px solid #0D47A1;
-	width: 100%;
-	padding: 1em;
-	border-radius: 1em;
-}
-
-label{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-}
-
-/* SUGESTAO CONTATOS */
-	.contatos{
+	.contato{
 		text-align: center;
 		padding-top: 20px;
 	}
 	
-	.icone-contatos{
+	.icone-contato{
 		font-size: 24px;
 		color: #0D47A1;
 		margin-bottom: 20px;
@@ -539,12 +521,10 @@ label{
 					color 0.5s;
 	}
 	
-	.contatos:hover .icone-contatos{
+	.contato:hover .icone-contato{
 		background-color: #0D47A1;
 		color: white;
 	}
-	
-/* FIM SUGESTAO CONTATOS /*
 
 /* rodape */
 .myfooter{
