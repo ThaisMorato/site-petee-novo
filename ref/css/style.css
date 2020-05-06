@@ -56,6 +56,35 @@
 		font-family: 'Roboto', sans-serif;
 		font-weight: 500;
 	}
+	
+	.linha-subtitulo{
+		padding-bottom: 10px;
+		width: 90px;
+	}
+	
+	.titulo{
+		display: table;
+		width: 100%;
+	}
+	
+	.titulo h5{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	a{
+		color: #007BFF;
+	}
+	
+	a:hover {
+		color: #0D47A1;
+	}
+	
+	::selection{
+		color: white;
+		background-color: #0D47A1;
+	}
 
 /* navbar */
 	.navbar{
@@ -201,22 +230,6 @@
 		background-color: rgba(0, 0, 0, 0.7); /*#0C2C8480*/
 		padding: 8px;
 		margin: 0px;
-	}
-	
-	#grupo .titulo{
-		display: table;
-		width: 100%;
-	}
-	
-	#grupo .titulo h5{
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-	}
-	
-	#grupo .linha-subtitulo{
-		padding-bottom: 10px;
-		width: 90px;
 	}
 	
 	#grupo .card-body{
@@ -492,6 +505,7 @@
 
 /* seção contatos */
 	.contato:hover p{
+		text-decoration: underline;
 		color: #0D47A1;
 	}
 
@@ -524,6 +538,18 @@
 	.contato:hover .icone-contato{
 		background-color: #0D47A1;
 		color: white;
+	}
+
+	/* fale conosco */
+	.form-group p{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 16px;
+		color: #212529;
+	}
+	
+	.form-group p~input{
+		margin-bottom: 20px;
 	}
 
 /* rodape */
