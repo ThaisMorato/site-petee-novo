@@ -4,8 +4,18 @@
 	<head>
 		<!-- definicoes principais -->
 		<meta charset="UTF-8">
-		<title>Manual da Engenharia Elétrica</title>
-		
+		<title>Manual da EE</title>
+		<!-- define o idioma do documento -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+		<meta http-equiv="content-style-type" content="text/css"/>
+		<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+		<meta http-equiv="content-script-type" content="text/javascript"/>
+		<!-- define a compatibilidade entre browsers -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<!-- define o autor da página -->
+		<meta name="author" content="PETEE UFMG"/>
+
 		<!-- link do google para as fontes que serão utilizadas -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Condensed' - Texto -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Slab' - Títulos -->
@@ -20,13 +30,35 @@
 		<link href="../ref/css/style.css" rel="stylesheet">
 
 		<link rel="shortcut icon" href="../ref/img/logos/simbolo_petee_600x600.png">
+
+		<!-- define o idioma -->
+		<meta property="og:locale" content="pt_BR">
+		<!-- define o link do site -->
+		<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/downloads">
+		<!-- define o título -->
+		<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
+		<meta property="og:site_name" content="PETEE UFMG">
+		<!-- define uma breve descrição do conteúdo -->
+		<meta property="og:description" content="Downloads">
+		<!-- define o local, o nome e o formato da imagem -->
+		<meta property="og:image" content="../ref/img/logos/simbolo_petee_600x600.png">
+		<meta property="og:image:type" content="image/png"/>
+		<!-- define a largura da imagem -->
+		<meta property="og:image:width" content="200"/>
+		<!-- define a altura da imagem -->
+		<meta property="og:image:height" content="200"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
 	</head>
+	
 	<body>
+
 		<!-- navbar -->
 		<header>
 			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
 			  <!-- Brand -->
-			  <a class="navbar-brand" href="#">
+			  <a class="navbar-brand" href="../#">
 				<img src="../ref/img/logos/logo_petee_branca.png" style="height: 45px">
 			  </a>
 
@@ -38,19 +70,28 @@
 			  <!-- Navbar links -->
 			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a class="nav-link" href="#pet">O Que é PET?</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#proposta">Nossa Proposta</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#minicursos-oficinas">Minicursos e Oficinas</a>
-				  </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="../#pet">Sobre Nós</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="../#minicursos-oficinas">Minicursos e Oficinas</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="../#cora">CoRA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Manual EE</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="../#maisprojetos">Mais Projetos</a>
+				    </li>
+				    <li class="nav-item">
+				  		<a class="nav-link" href="../#downloads">Downloads</a>
+				    </li>
 				</ul>
 			  </div>
 			</nav>
-        </header>
+		</header>
         <!-- nav lateral -->
         <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
             <div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
@@ -114,13 +155,13 @@
                         <!-- descricao -->
                         <div class="row justify-content-center descricao">
                             <div class="col-md-12 col-lg-12 text-justify">
-                                <p>O Programa de Educação Tutorial da Engenharia Elétrica – PETEE, elaborou este guia para acompanhar os alunos do curso de Engenharia Elétrica durante todo percurso acadêmico, um pequeno manual de consulta para ajudá-lo a resolver os problemas e dúvidas dentro da universidade de forma rápida e efetiva. Selecione no menu ao lado, ou a baixo, a sessão de interesse do manual.</p>
+                                <p>O Programa de Educação Tutorial da Engenharia Elétrica – PETEE, elaborou este guia para acompanhar os alunos do curso de Engenharia Elétrica durante todo percurso acadêmico, um pequeno manual de consulta para ajudá-lo a resolver os problemas e dúvidas dentro da universidade de forma rápida e efetiva. Selecione no menu ao lado a sessão de interesse do manual.</p>
                             </div>
                         </div>
                         <div class="row container-fluid">
                             <!-- Aproveitamento de Estudos -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade " style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/caderno.png" alt="caderno">
@@ -132,11 +173,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>    
+                                </div>  
                             </div>
                             <!-- Atividades acadêmicas -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img"  src="../ref/img/manual/manual_home/clip.png" alt="caderno">
@@ -154,7 +195,7 @@
                         <div class="row container-fluid">
                             <!-- Atividades Extracurriculares -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/lupa.png" alt="lupa">
@@ -170,7 +211,7 @@
                             </div>
                             <!-- Carteirinha de estudante -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/carteirinha.png" alt="carteirinha">
@@ -188,7 +229,7 @@
                         <div class="row container-fluid">
                             <!-- Certificados -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" style="margin-top: 18px" src="../ref/img/manual/manual_home/certificado.png" alt="certificado">
@@ -204,7 +245,7 @@
                             </div>
                             <!-- Comprovação de conhecimento -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/pencil.png" alt="lapis">
@@ -222,7 +263,7 @@
                         <div class="row container-fluid">
                             <!-- Contato de Professores -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/telefone.png" alt="telefone">
@@ -238,7 +279,7 @@
                             </div>
                             <!-- Disciplinas -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/osciloscopio.png" alt="osciloscopio">
@@ -256,7 +297,7 @@
                         <div class="row container-fluid">
                             <!-- Eventos -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/camera.png" alt="camera">
@@ -272,7 +313,7 @@
                             </div>
                             <!-- FUMP/CEU -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade">
+                                <div class="card atividade"style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/nota.png" alt="nota">
@@ -290,7 +331,7 @@
                         <div class="row container-fluid">
                             <!-- Intercambio -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade">
+                                <div class="card atividade"style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/intercambio.png" alt="intercambio">
@@ -306,7 +347,7 @@
                             </div>
                             <!-- Matrícula -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/matricula.png" alt="matricula">
@@ -324,7 +365,7 @@
                         <div class="row container-fluid">
                             <!-- Percurso Curricular Interativo -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade">
+                                <div class="card atividade"style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/planilha.png" alt="planilha">
@@ -340,7 +381,7 @@
                             </div>
                             <!-- Seção de ensino -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/grupo.png" alt="grupo">
@@ -358,7 +399,7 @@
                         <div class="row container-fluid  justify-content-center align-items-center">
                             <!-- Trancamento -->
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="card atividade ">
+                                <div class="card atividade "style="cursor: default;">
                                     <div class=" row no-gutters">
                                         <div class="col-lg-3 col-md-12 col-sm-12 manualhome">
                                             <img  class="card-img" src="../ref/img/manual/manual_home/cadeado.png" alt="cadeado">
@@ -1260,7 +1301,7 @@
                                     <div class="card mb-3 atividade">
                                         <div class="row no-gutters">
                                             <div class="col-md-3">
-                                                <img src="../ref/img/manual/certificados/potencia.png" style="margin-left: 15px;margin-top: 20px;height: 220px;width: 220px;" class="card-img" alt="potencia">
+                                                <img src="../ref/img/manual/certificados/potencia.png"  style="margin-left: 15px;margin-top: 20px;height: 220px;width: 220px;" class="card-img" alt="potencia">
                                             </div>
                                             <div class="col-md-9">
                                                 <div class="card-body">
